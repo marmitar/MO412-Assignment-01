@@ -60,7 +60,7 @@
 % \fancyhead[L]{\sffamily Universidade Estadual de Campinas}
 \fancyhead[L]{\sffamily%
     \href{https://www.unicamp.br/unicamp/}
-        {Universidade Estadual de Campinas}}
+        {University of Campinas}}
 \fancyhead[R]{\sffamily%
     \href{https://www.ic.unicamp.br/~meidanis/courses/mo412/2022s1/}
         {MC908 Graph Algorithms, 2022 T1}}
