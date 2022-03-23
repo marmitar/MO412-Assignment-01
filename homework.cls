@@ -13,8 +13,7 @@
     prefix = homework@
 }
 
-\DeclareStringOption[1]%
-    {assignment}
+\DeclareStringOption[1]{assignment}
 
 % pass unrecognized options to `article` class
 \DeclareDefaultOption{%
@@ -86,10 +85,18 @@
 }
 
 % ensure that the title is inserted in the document
-\title{\vspace{-2\baselineskip}Assignment \homework@assignment}
+\title{%
+    \vspace{-2\baselineskip}%
+    \ifdefined\homeworkname%
+        {\normalsize Assignment \homework@assignment} \\
+        \homeworkname
+    \else%
+        Assignment \homework@assignment
+    \fi%
+}
 % \author{\aga@authorsProcessed}
 \author{%
-    Tiago de Paula Alves ~(187679) \\%
-    \href{mailto:tiagodepalves@gmail.com}{\texttt{tiagodepalves@gmail.com}}%
+    Tiago de Paula Alves ~(187679) \\
+    \href{mailto:tiagodepalves@gmail.com}{\texttt{tiagodepalves@gmail.com}}
 }
 \AtBeginDocument{\maketitle\thispagestyle{fancy}}

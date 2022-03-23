@@ -1,9 +1,9 @@
+\def\homeworkname{Three networks}
 \documentclass[assignment = 1]{homework}
 
 \usepackage{caption, subcaption, pdfpages, float}
 \usepackage{graphics, wrapfig, pgf, graphicx}
 \usepackage{enumitem}
-\graphicspath{{../resultados/}}
 
 
 % pacotes para importar código
@@ -38,7 +38,7 @@
     notetype = foot+end,
     backend  = biber
 ]{biblatex}
-\addbibresource{referencias.bib}
+\addbibresource{references.bib}
 \usepackage[section]{placeins}
 
 \usepackage[hidelinks]{hyperref}
@@ -91,4 +91,7 @@
 \begin{document}
     \pagestyle{main}
 
+    \input{texts/01}
+    \input{texts/02}
+    \input{texts/03}
 \end{document}
